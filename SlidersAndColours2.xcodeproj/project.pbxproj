@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		53AA43A8277731E2004AB52D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA43A7277731E2004AB52D /* AppDelegate.swift */; };
 		53AA43AA277731E2004AB52D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA43A9277731E2004AB52D /* SceneDelegate.swift */; };
-		53AA43AC277731E2004AB52D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA43AB277731E2004AB52D /* ViewController.swift */; };
+		53AA43AC277731E2004AB52D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA43AB277731E2004AB52D /* MainViewController.swift */; };
 		53AA43AF277731E2004AB52D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AA43AD277731E2004AB52D /* Main.storyboard */; };
 		53AA43B1277731E4004AB52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53AA43B0277731E4004AB52D /* Assets.xcassets */; };
 		53AA43B4277731E4004AB52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53AA43B2277731E4004AB52D /* LaunchScreen.storyboard */; };
+		53AA43C527774658004AB52D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA43C427774658004AB52D /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53AA43A4277731E2004AB52D /* SlidersAndColours2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlidersAndColours2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53AA43A7277731E2004AB52D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53AA43A9277731E2004AB52D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		53AA43AB277731E2004AB52D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		53AA43AB277731E2004AB52D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		53AA43AE277731E2004AB52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53AA43B0277731E4004AB52D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53AA43B3277731E4004AB52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53AA43B5277731E4004AB52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53AA43C427774658004AB52D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		53AA43A6277731E2004AB52D /* SlidersAndColours2 */ = {
 			isa = PBXGroup;
 			children = (
-				53AA43A7277731E2004AB52D /* AppDelegate.swift */,
-				53AA43A9277731E2004AB52D /* SceneDelegate.swift */,
-				53AA43AB277731E2004AB52D /* ViewController.swift */,
-				53AA43AD277731E2004AB52D /* Main.storyboard */,
-				53AA43B0277731E4004AB52D /* Assets.xcassets */,
-				53AA43B2277731E4004AB52D /* LaunchScreen.storyboard */,
-				53AA43B5277731E4004AB52D /* Info.plist */,
+				53AA43BD27773248004AB52D /* ViewControllers */,
+				53AA43BF27773293004AB52D /* Storyboards */,
+				53AA43BE2777326C004AB52D /* SupportFiles */,
+				53AA43BB27773207004AB52D /* Resourses */,
 			);
 			path = SlidersAndColours2;
+			sourceTree = "<group>";
+		};
+		53AA43BB27773207004AB52D /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				53AA43B0277731E4004AB52D /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		53AA43BD27773248004AB52D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				53AA43AB277731E2004AB52D /* MainViewController.swift */,
+				53AA43C427774658004AB52D /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		53AA43BE2777326C004AB52D /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				53AA43A9277731E2004AB52D /* SceneDelegate.swift */,
+				53AA43A7277731E2004AB52D /* AppDelegate.swift */,
+				53AA43B5277731E4004AB52D /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		53AA43BF27773293004AB52D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				53AA43AD277731E2004AB52D /* Main.storyboard */,
+				53AA43B2277731E4004AB52D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53AA43AC277731E2004AB52D /* ViewController.swift in Sources */,
+				53AA43AC277731E2004AB52D /* MainViewController.swift in Sources */,
 				53AA43A8277731E2004AB52D /* AppDelegate.swift in Sources */,
 				53AA43AA277731E2004AB52D /* SceneDelegate.swift in Sources */,
+				53AA43C527774658004AB52D /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +327,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44ZA64HFPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SlidersAndColours2/Info.plist;
+				INFOPLIST_FILE = SlidersAndColours2/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +342,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +355,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44ZA64HFPA;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SlidersAndColours2/Info.plist;
+				INFOPLIST_FILE = SlidersAndColours2/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
