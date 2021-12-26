@@ -180,14 +180,14 @@
                     </view>
                     <connections>
                         <outlet property="blueColorSlider" destination="btD-a5-9Wo" id="hMe-pr-ST8"/>
-                        <outlet property="blueColorText" destination="TNh-Rz-YzC" id="gW0-oG-aJx"/>
+                        <outlet property="blueColorTF" destination="TNh-Rz-YzC" id="gW0-oG-aJx"/>
                         <outlet property="blueColorValue" destination="GmZ-yH-RtO" id="a6k-ew-8c7"/>
                         <outlet property="colorView" destination="koC-NE-1mZ" id="C35-W9-cmX"/>
                         <outlet property="greenColorSlider" destination="ryh-xf-qB3" id="8gf-NG-Ecg"/>
-                        <outlet property="greenColorText" destination="Dqd-pN-gEo" id="DWQ-fv-CZL"/>
+                        <outlet property="greenColorTF" destination="Dqd-pN-gEo" id="DWQ-fv-CZL"/>
                         <outlet property="greenColorValue" destination="ICk-kx-lui" id="C5S-CV-6uN"/>
                         <outlet property="redColorSlider" destination="CEn-mg-A5P" id="5qa-fv-48L"/>
-                        <outlet property="redColorText" destination="cNN-oh-AxA" id="iht-RP-tt0"/>
+                        <outlet property="redColorTF" destination="cNN-oh-AxA" id="iht-RP-tt0"/>
                         <outlet property="redColorValue" destination="soy-df-RNn" id="S1q-hm-mkq"/>
                     </connections>
                 </viewController>
