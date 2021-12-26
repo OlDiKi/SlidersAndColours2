@@ -41,8 +41,9 @@ class SettingsViewController: UIViewController {
         greenColorSlider.minimumTrackTintColor = .green
         
         setSliders()
-        setValueLabels()
-        setValueTextFields()
+        setTextField()
+        setValueLabels(for: redColorValue, greenColorValue, blueColorValue)
+        setValueTextFields(for: redColorTF, greenColorTF, blueColorTF)
     }
     
     //MARK: - IBAction's
@@ -87,7 +88,6 @@ extension SettingsViewController {
     
     private func setSliders() {
         let newColor = CIColor(color: color)
-        
         redColorSlider.value = Float(newColor.red)
         greenColorSlider.value = Float(newColor.green)
         blueColorSlider.value = Float(newColor.blue)
@@ -119,6 +119,12 @@ extension SettingsViewController {
         }
     }
     
+    private func setTextField() {
+        redColorTF.text = string(from: redColorSlider)
+        greenColorTF.text = string(from: greenColorSlider)
+        blueColorTF.text = string(from: blueColorSlider)
+    }
+    
     private func string(from slider: UISlider) -> String {
         String(format: "%.2f", slider.value)
     }
@@ -142,6 +148,11 @@ extension SettingsViewController {
 
 extension SettingsViewController: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
         
         guard let newValue = textField.text else { return }
@@ -158,8 +169,7 @@ extension SettingsViewController: UITextFieldDelegate {
             default: break
             }
             changeColor()
-            setValueLabels()
-            setValueTextFields()
+            setValueTextFields(for: redColorTF, greenColorTF, blueColorTF)
         } else {
             showAlert(title: "Wrong value!",
                       message: "Please enter correct number from 0 to 1")
